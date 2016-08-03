@@ -1,14 +1,18 @@
+const path    = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-    entry: './src/app.js',
+    context: path.resolve(__dirname, 'src'),
+    
+    entry: {
+        app : './app'
+    },
+    
     output: {
-        path: './build', 
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, 'build'), 
+        filename: '[name].js'
     },
-    devServer: {
-    	inline: true,
-    	contentBase: './build',
-    	port: 3333
-    },
+
     module: {
         loaders: [{
              test: /\.js$/,
@@ -18,5 +22,13 @@ module.exports = {
                 presets: ['es2015', 'react']
              }
         }]
-    }
+    },
+
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './index.ejs',
+            filename: 'index.html',
+            inject: true
+        })
+    ]
 }
