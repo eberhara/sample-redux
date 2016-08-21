@@ -1,8 +1,6 @@
-# jenkins-jobs-audit
+# redux-sample
 
-> An audit client for jenkins jobs.
-
-This is a simple React / Redux client to display audit information from a jenkins-ci server.
+> A simple redux sample using ES6
 
 ## License
 
