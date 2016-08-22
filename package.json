@@ -4,7 +4,7 @@
   "description": "Sample Redux",
   "scripts": {
     "start": "node server.js",
-    "linter": "./node_modules/.bin/eslint **/*.js"
+    "linter": "eslint **/*.js"
   },
   "dependencies": {
     "babel-polyfill": "^6.3.14",
