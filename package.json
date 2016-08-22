@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Sample Redux",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "linter": "./node_modules/.bin/eslint **/*.js"
   },
   "dependencies": {
     "babel-polyfill": "^6.3.14",
@@ -27,6 +28,11 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.1.1",
     "concurrently": "^0.1.1",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.2",
     "express": "^4.13.3",
     "redux-devtools": "^3.1.0",
     "redux-devtools-dock-monitor": "^1.0.1",
